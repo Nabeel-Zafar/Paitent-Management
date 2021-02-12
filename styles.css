@@ -1,0 +1,54 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("doctor.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+.LogoLink{
+    text-decoration: none;
+}
+#textColor{
+    color:rgb(11, 59, 122);
+    font-style: unset;
+}
+.SearchClass{
+  margin: 7px 0 0 510px;
+  padding: 6px;
+  font-size: 17px;
+  border: 1px solid #ddd;
+}
+.iconClass{
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 510px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.PaitentDetailsDiv{
+  margin: 30px 9px 26px 521px;
+}
+
+.nameClass{
+  text-decoration: none;
+}
+tr:hover{background-color: #EEE; cursor: pointer}
+
+.SearchClass{
+margin: 0px 0px 20px 1046px;
+}

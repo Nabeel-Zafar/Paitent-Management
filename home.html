@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>Paitent Management</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <div class="w3-bar-item w3-button w3-wide">
+        <a href="#home" class="LogoLink">
+        <img class="w3-image w3-round-large" src="logo.jpg" alt="CompanyLogo" width="50" height="0">
+        <span>DOCTOR WAQAS</span>
+        </a>
+    </div>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#details" class="w3-bar-item w3-button">PAITENT ENTRY</a>
+      <a href="#history" class="w3-bar-item w3-button">PAITENT HISTORY</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="#details" onclick="w3_close()" class="w3-bar-item w3-button">PAITENT ENTRY</a>
+  <a href="#history" onclick="w3_close()" class="w3-bar-item w3-button">PAITENT HISTORY</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <p><a href="#history" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Click for Paitent History</a></p>
+  </div> 
+</header>
+
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="details">
+  <h3 class="w3-center">ENTER PAITENT DETAILS</h3>
+  <div style="margin-top:48px">
+    <form autocomplete="off" onsubmit="event.preventDefault(); onFormSubmit();" >
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" id="Name" required></p>
+      <p><input class="w3-input w3-border" type="number" placeholder="Age" name="Age" id="Age" required></p>
+      <p><input class="w3-input w3-border" type="number" placeholder="Contact" name="Contact" id="Contact" required></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Disease" name="Disease" id="Disease" required></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+           Save
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="history">
+  <h3 class="w3-center">PAITENTS HISTORY</h3>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="search-container">
+          <input class="SearchClass" type="text" placeholder="Search By Name" name="search">
+      </div>
+    <div class="w3-container">
+      <div class="w3-responsive">
+      <table class="w3-table-all" id="paitentList">
+        <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Contact</th>
+                  <th>Disease</th>
+                  <th></th>
+              </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+      </table>
+      </div>
+      </div> 
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Created By <a class="nameClass" href="https://www.facebook.com/muhammadnabeel.zafar" target="_blank">Muhammad Nabeel Zafar</a></p>
+</footer>
+ 
+<script src="main.js"></script>
+
+</body>
+</html>
